@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "61a76778-334c-470f-a351-720c0f901e0c",
+		"name": "CovidStatistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FetchByCountry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/covidStatistics/fetchByCountry?country=USA",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"covidStatistics",
+						"fetchByCountry"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "USA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/covidStatistics/fetchAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"covidStatistics",
+						"fetchAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchByCountryAndPageSize",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/covidStatistics/fetchByCountryAndPageSize?country=USA&pageSize=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"covidStatistics",
+						"fetchByCountryAndPageSize"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "USA"
+						},
+						{
+							"key": "pageSize",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
